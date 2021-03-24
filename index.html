@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <title>Sushi</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="container py-4 d-flex align-items-center">
+        <div class="header__logo col-2">
+          <p class="header__logo--text">Raw Fish</p>
+        </div>
+        <nav class="header__nav-menu offset-2 col-8">
+          <ul class="header__nav-menu__list d-flex justify-content-around">
+            <li class="header__nav-menu__list__item menu-link">
+              <a href="" class="header__nav-menu__list__item__link">Меню</a>
+            </li>
+            <li class="header__nav-menu__list__item">
+              <a href="" class="header__nav-menu__list__item__link"
+                >О доставке</a
+              >
+            </li>
+            <li class="header__nav-menu__list__item sale-link">
+              <a href="" class="header__nav-menu__list__item__link"
+              style="color: #ff0000"
+              >Акции</a>
+            </li>
+            <li class="header__nav-menu__list__item">
+              <a href="" class="header__nav-menu__list__item__link"
+                >О RawFish</a
+              >
+            </li>
+            <li class="header__nav-menu__list__item">
+              <a href="" class="header__nav-menu__list__item__link">
+                Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main__slides">
+        <div class="swiper-container swiper-main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/CtqMVBPPuoRhFtmgABpDq-xVObMsi4KO.jpg"
+                alt="Sale Yesterday"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/6LyWqkH4CW-N2DEUquNgMwOiVe06t_W4.jpg"
+                alt="Sale Now"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/A_k-zW6UW_av6Xe5HFgCroHXedbYLVlG.jpg"
+                alt="Sale Yesterday"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/XBpLiuKvdKhSI7FsKC9AV4CaspSDZnw3.jpg"
+                alt="Sale Tomorrow"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </main>
+
+    <section class="categories pt-3" id="categories">
+      <div class="categories__slides">
+        <div class="swiper-container swiper-categories">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <button class="categories-wrapper" id="newest-btn">
+                <img src="./assets/images/hot.jpg" alt="Sale Yesterday" />
+                <p class="categories-wrapper--title pb-3">Новинки</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper" id="daily-btn">
+                <img
+                  src="./assets/images/mochi_1164.jpg"
+                  alt="Sale Yesterday"
+                />
+                <p class="categories-wrapper--title pb-3">Daily-меню</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper" id="sale-btn">
+                <img src="./assets/images/novinki.jpg" alt="Sale Yesterday" />
+                <p
+                  style="color: #ff0000"
+                  class="categories-wrapper--title pb-3"
+                >
+                  Акции
+                </p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper" id="roll-btn">
+                <img
+                  src="./assets/images/sous_300x300.jpg"
+                  alt="Sale Yesterday"
+                />
+                <p class="categories-wrapper--title pb-3">Роллы</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper" id="salad-btn">
+                <img src="./assets/images/snack.jpg" alt="Sale Yesterday" />
+                <p class="categories-wrapper--title pb-3">Салаты</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper" id="dessert-btn">
+                <img src="./assets/images/soup.jpg" alt="Sale Yesterday" />
+                <p class="categories-wrapper--title pb-3">Закуски</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper" id="hot-btn">
+                <img src="./assets/images/deserty.jpg" alt="Sale Yesterday" />
+                <p class="categories-wrapper--title pb-3">Горячее</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper" id="kid-btn">
+                <img src="./assets/images/sushsi2.jpg" alt="Sale Yesterday" />
+                <p class="categories-wrapper--title pb-3">Детское</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper">
+                <img
+                  src="./assets/images/CesarKrevetki_400[1].png"
+                  alt="Sale Yesterday"
+                />
+                <p class="categories-wrapper--title pb-3">Напитки</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper">
+                <img src="./assets/images/sushi3.jpg" alt="Sale Yesterday" />
+                <p class="categories-wrapper--title pb-3">Супы</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper">
+                <img
+                  src="./assets/images/vegetarian.jpg"
+                  alt="Sale Yesterday"
+                />
+                <p class="categories-wrapper--title pb-3">Вегетарианс...</p>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="product-details d-none" id="product-details">
+      <div class="product-details__holder d-flex align-items-center">
+        <div class="product-details__holder--close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="" class="product-details__holder--img p-5" />
+            </div>
+            <div class="col-lg-5">
+              <div class="product-details__holder__info">
+                <p class="product-details__holder__info--title my-5"></p>
+                <p class="product-details__holder__info--description mb-5"></p>
+                <hr />
+                <p class="product-details__holder__info--price my-3"></p>
+                <hr />
+              </div>
+              <div
+                class="product-details__holder__social d-flex justify-content-center align-items-center my-5"
+              >
+                <a
+                  href="#"
+                  class="product-details__holder__social--link d-flex justify-content-center align-items-center"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="#"
+                  class="product-details__holder__social--link d-flex justify-content-center align-items-center mx-4"
+                  ><i class="fab fa-vk"></i
+                ></a>
+                <a
+                  href="#"
+                  class="product-details__holder__social--link d-flex justify-content-center align-items-center"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="category pt-5" id="newest">
+      <div class="category-title py-4">Новинки</div>
+      <div class="container">
+        <div class="row py-lg-5">
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/newest.jpg"
+              alt="Product"
+            />
+            <div class="category__product--title my-lg-3">Марбл манго</div>
+            <div class="category__product--detail">
+              Креветка, краб-микс, манго, сыр, мраморные нори, тобико, микс
+              соусов, кинза, кунжут
+            </div>
+            <div class="category__product--price">35 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/sushsi2.jpg"
+              alt="Product"
+            />
+            <div class="category__product--title my-3">
+              Ролл с опаленным лососем
+            </div>
+            <div class="category__product--detail">
+              Угорь копченый, лосось опаленный, авокадо, латук, тобико, соусы
+              спайс и унаги, кунжут
+            </div>
+            <div class="category__product--price">80 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/sushi3.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">Такеши</div>
+            <div class="category__product--detail">
+              Лосось, гребешок, авокадо, омлет, сыр, тобико, соусы унаги и «Свит
+              юдзу», зелень, кунжут
+            </div>
+            <div class="category__product--price">50 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/sushi4.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">Мацуо</div>
+            <div class="category__product--detail">
+              Угорь, авокадо, сыр, микс соусов, тобико
+            </div>
+            <div class="category__product--price">120 АЗН</div>
+          </div>
+        </div>
+        <div class="row py-lg-5">
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/hot.jpg"
+              alt="Product"
+            />
+            <div class="category__product--title my-3">Марбл манго</div>
+            <div class="category__product--detail">
+              Креветка, краб-микс, манго, сыр, мраморные нори, тобико, микс
+              соусов, кинза, кунжут
+            </div>
+            <div class="category__product--price">35 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/vegetarian.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">
+              Ролл с опаленным лососем
+            </div>
+            <div class="category__product--detail">
+              Угорь копченый, лосось опаленный, авокадо, латук, тобико, соусы
+              спайс и унаги, кунжут
+            </div>
+            <div class="category__product--price">80 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/sous_300x300.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">Такеши</div>
+            <div class="category__product--detail">
+              Лосось, гребешок, авокадо, омлет, сыр, тобико, соусы унаги и «Свит
+              юдзу», зелень, кунжут
+            </div>
+            <div class="category__product--price">50 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/snack.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">Мацуо</div>
+            <div class="category__product--detail">
+              Угорь, авокадо, сыр, микс соусов, тобико
+            </div>
+            <div class="category__product--price">120 АЗН</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category pt-5" id="daily">
+      <div class="category-title py-4">Daily-меню</div>
+      <div class="container">
+        <div class="row py-lg-5">
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/05-roll.jpg"
+              alt="Product"
+            />
+            <div class="category__product--title my-3">Марбл манго</div>
+            <div class="category__product--detail">
+              Креветка, краб-микс, манго, сыр, мраморные нори, тобико, микс
+              соусов, кинза, кунжут
+            </div>
+            <div class="category__product--price">35 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/dim_samy.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">
+              Ролл с опаленным лососем
+            </div>
+            <div class="category__product--detail">
+              Угорь копченый, лосось опаленный, авокадо, латук, тобико, соусы
+              спайс и унаги, кунжут
+            </div>
+            <div class="category__product--price">80 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/02_KIDS_BOX_400x400.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">Такеши</div>
+            <div class="category__product--detail">
+              Лосось, гребешок, авокадо, омлет, сыр, тобико, соусы унаги и «Свит
+              юдзу», зелень, кунжут
+            </div>
+            <div class="category__product--price">50 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/deserty.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">Мацуо</div>
+            <div class="category__product--detail">
+              Угорь, авокадо, сыр, микс соусов, тобико
+            </div>
+            <div class="category__product--price">120 АЗН</div>
+          </div>
+        </div>
+        <div class="row py-lg-5">
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/mochi_1164.jpg"
+              alt="Product"
+            />
+            <div class="category__product--title my-3">Марбл манго</div>
+            <div class="category__product--detail">
+              Креветка, краб-микс, манго, сыр, мраморные нори, тобико, микс
+              соусов, кинза, кунжут
+            </div>
+            <div class="category__product--price">35 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/sushi3.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">
+              Ролл с опаленным лососем
+            </div>
+            <div class="category__product--detail">
+              Угорь копченый, лосось опаленный, авокадо, латук, тобико, соусы
+              спайс и унаги, кунжут
+            </div>
+            <div class="category__product--price">80 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/CesarKrevetki_400[1].png"
+              alt=""
+            />
+            <div class="category__product--title my-3">Такеши</div>
+            <div class="category__product--detail">
+              Лосось, гребешок, авокадо, омлет, сыр, тобико, соусы унаги и «Свит
+              юдзу», зелень, кунжут
+            </div>
+            <div class="category__product--price">50 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/soup.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">Мацуо</div>
+            <div class="category__product--detail">
+              Угорь, авокадо, сыр, микс соусов, тобико
+            </div>
+            <div class="category__product--price">120 АЗН</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category py-lg-5" id="sale">
+      <div class="category-title py-4">Акции</div>
+      <div class="container">
+        <div class="row py-lg-5">
+          <div class="col-lg-3 category__product">
+            <img
+              title="Марбл манго"
+              class="category__product--img"
+              src="./assets/images/05-roll.jpg"
+              alt="Product"
+            />
+            <div class="category__product--title my-3">Марбл манго</div>
+            <div class="category__product--detail">
+              Креветка, краб-микс, манго, сыр, мраморные нори, тобико, микс
+              соусов, кинза, кунжут
+            </div>
+            <div class="category__product--old-price"><del>45 АЗН</del></div>
+            <div class="category__product--price">35 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Ролл с опаленным лососем"
+              class="category__product--img"
+              src="./assets/images/dim_samy.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">
+              Ролл с опаленным лососем
+            </div>
+            <div class="category__product--detail">
+              Угорь копченый, лосось опаленный, авокадо, латук, тобико, соусы
+              спайс и унаги, кунжут
+            </div>
+            <div class="category__product--old-price"><del>90 АЗН</del></div>
+            <div class="category__product--price">80 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Такеши"
+              class="category__product--img"
+              src="./assets/images/02_KIDS_BOX_400x400.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">Такеши</div>
+            <div class="category__product--detail">
+              Лосось, гребешок, авокадо, омлет, сыр, тобико, соусы унаги и «Свит
+              юдзу», зелень, кунжут
+            </div>
+            <div class="category__product--old-price"><del>60 АЗН</del></div>
+            <div class="category__product--price">50 АЗН</div>
+          </div>
+          <div class="col-lg-3 category__product">
+            <img
+              title="Мацуо"
+              class="category__product--img"
+              src="./assets/images/deserty.jpg"
+              alt=""
+            />
+            <div class="category__product--title my-3">Мацуо</div>
+            <div class="category__product--detail">
+              Угорь, авокадо, сыр, микс соусов, тобико
+            </div>
+            <div class="category__product--old-price"><del>135 АЗН</del></div>
+            <div class="category__product--price">120 АЗН</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer py-5" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer__logo mb-5">
+              <p class="footer__logo--text">Raw Fish</p>
+            </div>
+            <div class="footer__info">
+              <p class="footer__info--tel mb-4">
+                Телефон доставки: +7 (499) 649-2-223
+              </p>
+              <p class="footer__info--copywright">
+                &copy; 2021 Ресторан японской кухни «RawFish» Доставка суши на
+                дом
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="footer__social d-flex justify-content-center align-items-center"
+            >
+              <a
+                href="#"
+                class="footer__social--link d-flex justify-content-center align-items-center"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="footer__social--link d-flex justify-content-center align-items-center mx-4"
+                ><i class="fab fa-vk"></i
+              ></a>
+              <a
+                href="#"
+                class="footer__social--link d-flex justify-content-center align-items-center"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="footer__email d-flex justify-content-between align-items-center pb-5"
+            >
+              <p class="footer__email--text">
+                Остались вопросы?<br />Задайте их нам!
+              </p>
+              <a
+                href="mailto:#"
+                class="footer__email--link d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+            <p class="footer__address mt-5">
+              Baku, Azerbaijan, Nizami Street 123
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
