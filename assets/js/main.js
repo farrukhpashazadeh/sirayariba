@@ -1,5 +1,8 @@
 "use strict";
 
+let menu = document.querySelector('.menu-icon');
+const mobileSidebarHolder = document.querySelector('.mobile-sidebar-holder');
+const mobileSidebar = document.querySelector('.mobile-sidebar');
 const products = document.getElementsByClassName('category__product');
 const productDetails = document.getElementById('product-details');
 const productDetailsImage = document.querySelector('.product-details__holder--img');
@@ -9,12 +12,12 @@ const productDetailsPrice = document.querySelector('.product-details__holder__in
 const menuLink = document.querySelector('.menu-link');
 const saleLink = document.querySelector('.sale-link');
 const closeBtn = document.querySelector('.product-details__holder--close-btn');
-
+const productDetailsHolder = document.querySelector('.product-details__holder');
 const categories = document.getElementById("categories");
-
 const newest = document.getElementById("newest");
 const daily = document.getElementById("daily");
 const sale = document.getElementById("sale");
+const closeBtnMobile = document.querySelector('.mobile-sidebar__top--close-btn');
 
 const offset = 440;
 
@@ -106,16 +109,16 @@ const swiperCategories = new Swiper(".swiper-categories", {
   },
   breakpoints: {
     200: {
-      slidesPerView: 3,
+      slidesPerView: 5,
     },
     640: {
-      slidesPerView: 3,
+      slidesPerView: 5,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 7,
     },
     1024: {
-      slidesPerView: 10,
+      slidesPerView: 9,
     },
   }
 });
@@ -159,12 +162,35 @@ closeBtn.addEventListener('click', () => {
   productDetails.classList.add('d-none');
 })
 
-const productDetailsHolder = document.querySelector('.product-details__holder');
-
 productDetails.addEventListener('click', () => {
   productDetails.classList.add('d-none');
+})
+
+productDetails.addEventListener('scroll', e => {
+  e.preventDefault();
 })
 
 productDetailsHolder.addEventListener('click', (e) => {
   e.stopPropagation();
 })
+
+menu.addEventListener('click', () => {
+  mobileSidebarHolder.style.left = '0';
+  mobileSidebarHolder.style.opacity = '1';
+})
+
+mobileSidebarHolder.addEventListener('click', () => {
+  mobileSidebarHolder.style.left = '-100%';
+  mobileSidebarHolder.style.opacity = '0';
+
+});
+
+mobileSidebar.addEventListener('click', e => {
+  e.stopPropagation();
+})
+
+closeBtnMobile.addEventListener('click', () => {
+  mobileSidebarHolder.style.left = '-100%';
+  mobileSidebarHolder.style.opacity = '0';
+  document.body.classList.remove('overflow--hidden');
+});

@@ -6,7 +6,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <!-- Font Awesome -->
@@ -16,7 +16,10 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <!-- Bootstrap Grid CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap-grid.css" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/sass/main.css" />
 
     <!-- Swiper CSS -->
@@ -26,14 +29,22 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
+    <!-- Favicon Css -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo/сырая рыба logo-03.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo/сырая рыба logo-03.png" />
+
     <title>Sushi</title>
   </head>
 
   <body>
     <header class="header" id="header">
       <div class="container py-4 d-flex align-items-center">
-        <div class="header__logo col-2">
-          <p class="header__logo--text">Raw Fish</p>
+        <div class="col-2">
+          <img
+            src="./assets/images/logo/сырая рыба logo-03.png"
+            alt="Logo"
+            class="header__logo"
+          />
         </div>
         <nav class="header__nav-menu offset-2 col-8">
           <ul class="header__nav-menu__list d-flex justify-content-around">
@@ -46,13 +57,16 @@
               >
             </li>
             <li class="header__nav-menu__list__item sale-link">
-              <a href="" class="header__nav-menu__list__item__link"
-              style="color: #ff0000"
-              >Акции</a>
+              <a
+                href=""
+                class="header__nav-menu__list__item__link"
+                style="color: #ff0000"
+                >Акции</a
+              >
             </li>
             <li class="header__nav-menu__list__item">
               <a href="" class="header__nav-menu__list__item__link"
-                >О RawFish</a
+                >О SirayaRiba</a
               >
             </li>
             <li class="header__nav-menu__list__item">
@@ -63,11 +77,24 @@
           </ul>
         </nav>
       </div>
+      <div class="container-fluid mobile-header">
+        <div class="row">
+          <button class="menu-icon col-2">
+            <i class="fas fa-bars"></i>
+          </button>
+          <img
+            src="./assets/images/logo/сырая рыба logo-01.png"
+            alt="logo"
+            class="mobile-header__logo col-2 offset-2"
+          />
+        </div>
+      </div>
     </header>
 
     <main id="main" class="main">
       <div class="main__slides">
         <div class="swiper-container swiper-main">
+          <div class="shadowSlideMobile"></div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
@@ -97,7 +124,207 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
+      <div class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <div class="d-flex justify-content-around">
+            <li class="mobile-nav__list__item">
+              <a
+                href="./mobileProducts.html"
+                class="mobile-nav__list__item--link"
+                >Меню</a
+              >
+            </li>
+            <li class="mobile-nav__list__item">
+              <a href="" class="mobile-nav__list__item--link">О доставке</a>
+            </li>
+          </div>
+          <li class="mobile-nav__list__item">
+            <a href="" class="mobile-nav__list__item--link">О SirayaRiba</a>
+          </li>
+          <li class="mobile-nav__list__item">
+            <a href="" class="mobile-nav__list__item--link">Something</a>
+          </li>
+        </ul>
+      </div>
     </main>
+    <div class="mobile-sidebar-holder">
+      <div class="mobile-sidebar">
+        <div class="mobile-sidebar__top">
+          <button class="mobile-sidebar__top--close-btn"><i class="fas fa-times"></i></button>
+      </div>
+        <div class="mobile-sidebar__menu">
+          <ul class="mobile-sidebar__menu__list">
+            <li class="mobile-sidebar__menu__list__item">
+              <a href="" class="mobile-sidebar__menu__list__item--link">Меню</a>
+            </li>
+            <li class="mobile-sidebar__menu__list__item">
+              <a href="" class="mobile-sidebar__menu__list__item--link"
+                >О доставке</a
+              >
+            </li>
+            <li class="mobile-sidebar__menu__list__item">
+              <a href="" class="mobile-sidebar__menu__list__item--link"
+                >О SirayaRiba</a
+              >
+            </li>
+            <li class="mobile-sidebar__menu__list__item">
+              <a href="" class="mobile-sidebar__menu__list__item--link"
+                >Something</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="productOnSale d-flex">
+          <button class="productOnSale__btn">
+            <img
+              src="./assets/images/sushi3.jpg
+          "
+              alt="Sale Yesterday"
+            />
+          </button>
+          <div class="productOnSale__details">
+            <p class="productOnSale__details--title">Марбл манго</p>
+            <div class="productOnSale__details--price">
+              <p class="productOnSale__details--price--old">
+                <del>35 AZN</del>
+              </p>
+              <p class="productOnSale__details--price--current">25 AZN</p>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-sidebar__categories py-3">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="newest-btn">
+                  <img src="./assets/images/hot.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Новинки
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="daily-btn">
+                  <img
+                    src="./assets/images/mochi_1164.jpg"
+                    alt="Sale Yesterday"
+                  />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Daily-меню
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="sale-btn">
+                  <img src="./assets/images/novinki.jpg" alt="Sale Yesterday" />
+                  <p
+                    style="color: #ff0000"
+                    class="mobile-sidebar__categories--btn--title pb-3"
+                  >
+                    Акции
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="roll-btn">
+                  <img
+                    src="./assets/images/sous_300x300.jpg"
+                    alt="Sale Yesterday"
+                  />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Роллы
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="salad-btn">
+                  <img src="./assets/images/snack.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Салаты
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button
+                  class="mobile-sidebar__categories--btn"
+                  id="dessert-btn"
+                >
+                  <img src="./assets/images/soup.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Закуски
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="hot-btn">
+                  <img src="./assets/images/deserty.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Горячее
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="kid-btn">
+                  <img src="./assets/images/sushsi2.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Детское
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn">
+                  <img
+                    src="./assets/images/CesarKrevetki_400[1].png"
+                    alt="Sale Yesterday"
+                  />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Напитки
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn">
+                  <img src="./assets/images/sushi3.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Супы
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn">
+                  <img
+                    src="./assets/images/vegetarian.jpg"
+                    alt="Sale Yesterday"
+                  />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Вегетарианс...
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-details__holder__social d-flex justify-content-center align-items-center py-4"
+        >
+          <a
+            href="#"
+            class="product-details__holder__social--link d-flex justify-content-center align-items-center"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="#"
+            class="product-details__holder__social--link d-flex justify-content-center align-items-center mx-4"
+            ><i class="fab fa-vk"></i
+          ></a>
+          <a
+            href="#"
+            class="product-details__holder__social--link d-flex justify-content-center align-items-center"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
 
     <section class="categories pt-3" id="categories">
       <div class="categories__slides">
@@ -105,22 +332,14 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <button class="categories-wrapper" id="newest-btn">
-                <img src="./assets/images/hot.jpg" alt="Sale Yesterday" />
+                <img src="./assets/images/novinki.jpg" alt="Sale Yesterday" />
                 <p class="categories-wrapper--title pb-3">Новинки</p>
               </button>
             </div>
-            <div class="swiper-slide">
-              <button class="categories-wrapper" id="daily-btn">
-                <img
-                  src="./assets/images/mochi_1164.jpg"
-                  alt="Sale Yesterday"
-                />
-                <p class="categories-wrapper--title pb-3">Daily-меню</p>
-              </button>
-            </div>
+          
             <div class="swiper-slide">
               <button class="categories-wrapper" id="sale-btn">
-                <img src="./assets/images/novinki.jpg" alt="Sale Yesterday" />
+                <img src="./assets/images/daily_menu.jpg" alt="Sale Yesterday" />
                 <p
                   style="color: #ff0000"
                   class="categories-wrapper--title pb-3"
@@ -132,49 +351,41 @@
             <div class="swiper-slide">
               <button class="categories-wrapper" id="roll-btn">
                 <img
-                  src="./assets/images/sous_300x300.jpg"
+                  src="./assets/images/05-roll.jpg"
                   alt="Sale Yesterday"
                 />
                 <p class="categories-wrapper--title pb-3">Роллы</p>
               </button>
             </div>
             <div class="swiper-slide">
+              <button class="categories-wrapper" id="roll-btn">
+                <img
+                  src="./assets/images/sous_300x300.jpg"
+                  alt="Sale Yesterday"
+                />
+                <p class="categories-wrapper--title pb-3">Горячие Роллы</p>
+              </button>
+            </div>
+            <div class="swiper-slide">
               <button class="categories-wrapper" id="salad-btn">
-                <img src="./assets/images/snack.jpg" alt="Sale Yesterday" />
-                <p class="categories-wrapper--title pb-3">Салаты</p>
+                <img src="./assets/images/06-set[1].jpg" alt="Sale Yesterday" />
+                <p class="categories-wrapper--title pb-3">Сеты</p>
               </button>
             </div>
-            <div class="swiper-slide">
-              <button class="categories-wrapper" id="dessert-btn">
-                <img src="./assets/images/soup.jpg" alt="Sale Yesterday" />
-                <p class="categories-wrapper--title pb-3">Закуски</p>
-              </button>
-            </div>
-            <div class="swiper-slide">
-              <button class="categories-wrapper" id="hot-btn">
-                <img src="./assets/images/deserty.jpg" alt="Sale Yesterday" />
-                <p class="categories-wrapper--title pb-3">Горячее</p>
-              </button>
-            </div>
+      
             <div class="swiper-slide">
               <button class="categories-wrapper" id="kid-btn">
-                <img src="./assets/images/sushsi2.jpg" alt="Sale Yesterday" />
+                <img src="./assets/images/02_KIDS_BOX_400x400.jpg" alt="Sale Yesterday" />
                 <p class="categories-wrapper--title pb-3">Детское</p>
               </button>
             </div>
             <div class="swiper-slide">
               <button class="categories-wrapper">
                 <img
-                  src="./assets/images/CesarKrevetki_400[1].png"
+                  src="./assets/images/400_px_0003s_0002_Layer-4-copy[2].png"
                   alt="Sale Yesterday"
                 />
                 <p class="categories-wrapper--title pb-3">Напитки</p>
-              </button>
-            </div>
-            <div class="swiper-slide">
-              <button class="categories-wrapper">
-                <img src="./assets/images/sushi3.jpg" alt="Sale Yesterday" />
-                <p class="categories-wrapper--title pb-3">Супы</p>
               </button>
             </div>
             <div class="swiper-slide">
@@ -186,9 +397,17 @@
                 <p class="categories-wrapper--title pb-3">Вегетарианс...</p>
               </button>
             </div>
+            <div class="swiper-slide">
+              <button class="categories-wrapper">
+                <img
+                  src="./assets/images/CesarKrevetki_400[1].png
+                  "
+                  alt="Sale Yesterday"
+                />
+                <p class="categories-wrapper--title pb-3">Салаты</p>
+              </button>
+            </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -557,8 +776,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-            <div class="footer__logo mb-5">
-              <p class="footer__logo--text">Raw Fish</p>
+            <div class="mb-5">
+              <img
+                src="./assets/images/logo/сырая рыба logo-01.png"
+                alt="Logo White"
+                class="footer__logo"
+              />
             </div>
             <div class="footer__info">
               <p class="footer__info--tel mb-4">
@@ -617,5 +840,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/mobile.js"></script>
   </body>
 </html>

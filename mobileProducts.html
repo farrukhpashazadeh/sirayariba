@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap-grid.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/logo/сырая рыба logo-03.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/logo/сырая рыба logo-03.png"
+    />
+
+    <title>Products</title>
+  </head>
+  <body>    
+    <div class="mobile-sidebar-holder">
+        <div class="container"></div>
+        <div class="mobile-sidebar">
+            <div class="mobile-sidebar__top">
+                <button class="mobile-sidebar__top--close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="mobile-sidebar__menu">
+          <ul class="mobile-sidebar__menu__list">
+            <li class="mobile-sidebar__menu__list__item">
+              <a href="" class="mobile-sidebar__menu__list__item--link">Меню</a>
+            </li>
+            <li class="mobile-sidebar__menu__list__item">
+              <a href="" class="mobile-sidebar__menu__list__item--link"
+                >О доставке</a
+              >
+            </li>
+            <li class="mobile-sidebar__menu__list__item">
+              <a href="" class="mobile-sidebar__menu__list__item--link"
+                >О SirayaRiba</a
+              >
+            </li>
+            <li class="mobile-sidebar__menu__list__item">
+              <a href="" class="mobile-sidebar__menu__list__item--link"
+                >Something</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="productOnSale d-flex">
+          <button class="productOnSale__btn">
+            <img
+              src="./assets/images/sushi3.jpg
+            "
+              alt="Sale Yesterday"
+            />
+          </button>
+          <div class="productOnSale__details">
+            <p class="productOnSale__details--title">Марбл манго</p>
+            <div class="productOnSale__details--price">
+              <p class="productOnSale__details--price--old">
+                <del>35 АЗН</del>
+              </p>
+              <p class="productOnSale__details--price--current">25 АЗН</p>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-sidebar__categories py-3">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="newest-btn">
+                  <img src="./assets/images/hot.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Новинки
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="daily-btn">
+                  <img
+                    src="./assets/images/mochi_1164.jpg"
+                    alt="Sale Yesterday"
+                  />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Daily-меню
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="sale-btn">
+                  <img src="./assets/images/novinki.jpg" alt="Sale Yesterday" />
+                  <p
+                    style="color: #ff0000"
+                    class="mobile-sidebar__categories--btn--title pb-3"
+                  >
+                    Акции
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="roll-btn">
+                  <img
+                    src="./assets/images/sous_300x300.jpg"
+                    alt="Sale Yesterday"
+                  />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Роллы
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="salad-btn">
+                  <img src="./assets/images/snack.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Салаты
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button
+                  class="mobile-sidebar__categories--btn"
+                  id="dessert-btn"
+                >
+                  <img src="./assets/images/soup.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Закуски
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="hot-btn">
+                  <img src="./assets/images/deserty.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Горячее
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn" id="kid-btn">
+                  <img src="./assets/images/sushsi2.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Детское
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn">
+                  <img
+                    src="./assets/images/CesarKrevetki_400[1].png"
+                    alt="Sale Yesterday"
+                  />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Напитки
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn">
+                  <img src="./assets/images/sushi3.jpg" alt="Sale Yesterday" />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Супы
+                  </p>
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="mobile-sidebar__categories--btn">
+                  <img
+                    src="./assets/images/vegetarian.jpg"
+                    alt="Sale Yesterday"
+                  />
+                  <p class="mobile-sidebar__categories--btn--title pb-3">
+                    Вегетарианс...
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-details__holder__social d-flex justify-content-center align-items-center py-4"
+        >
+          <a
+            href="#"
+            class="product-details__holder__social--link d-flex justify-content-center align-items-center"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="#"
+            class="product-details__holder__social--link d-flex justify-content-center align-items-center mx-4"
+            ><i class="fab fa-vk"></i
+          ></a>
+          <a
+            href="#"
+            class="product-details__holder__social--link d-flex justify-content-center align-items-center"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="products">
+      <div class="products__nav">
+        <div class="container">
+          <div class="row">
+            <button class="menu-icon col-2">
+              <i class="fas fa-bars"></i>
+            </button>
+            <button class="products__nav__categories col-5 offset-3">
+              <p class="products__nav__categories--name">Новинки
+                <!-- <div class="products__nav__categories--name--arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div> -->
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="products__product">
+              <button
+                class="products__product__product-btn d-flex"
+                id="salad-btn"
+              >
+                <img src="./assets/images/snack.jpg" alt="Sale Yesterday" />
+                <div class="products__product__product-btn__details">
+                  <p class="products__product__product-btn__details--title">
+                    Ланч с гедзами и тяханом
+                  </p>
+                  <p
+                    class="products__product__product-btn__details--description my-2"
+                  >
+                  Гедза со свининой, тяхан с говядиной, салат Кумотори с креветками, булочка. На эту позицию меню не действуют скидки
+                  </p>
+                  <p class="products__product__product-btn__details--price">50<small>
+                      АЗН
+                  </small>
+                  </p>
+                </div>
+              </button>
+              <button
+                class="products__product__product-btn d-flex"
+                id="salad-btn"
+              >
+                <img src="./assets/images/soup.jpg" alt="Sale Yesterday" />
+                <div class="products__product__product-btn__details">
+                  <p class="products__product__product-btn__details--title">
+                    Ланч с крыльями и Окинавой
+                  </p>
+                  <p
+                    class="products__product__product-btn__details--description my-2"
+                  >
+                  Острые куриные крылышки, ролл Окинава, салат Касай, булочка
+                  </p>
+                  <p class="products__product__product-btn__details--price">45<small>
+                    АЗН
+                </small></p>
+                </div>
+              </button>
+              <button
+                class="products__product__product-btn d-flex"
+                id="salad-btn"
+              >
+                <img src="./assets/images/novinki.jpg" alt="Sale Yesterday" />
+                <div class="products__product__product-btn__details">
+                  <p class="products__product__product-btn__details--title">
+                    Ланч с курицей и Филадельфией
+                  </p>
+                  <p
+                    class="products__product__product-btn__details--description my-2"
+                  >
+                  Лапша с курицей, салат Кофу, ролл Филадельфия Смоук, булочка. На эту позицию меню не действуют скидки
+                  </p>
+                  <p class="products__product__product-btn__details--price">50<small>
+                    АЗН
+                </small></p>
+                </div>
+              </button>
+              <button
+                class="products__product__product-btn d-flex"
+                id="salad-btn"
+              >
+                <img src="./assets/images/sushi3.jpg" alt="Sale Yesterday" />
+                <div class="products__product__product-btn__details">
+                  <p class="products__product__product-btn__details--title">
+                    Takushi
+                  </p>
+                  <p
+                    class="products__product__product-btn__details--description my-2"
+                  >
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Officia, alias.
+                  </p>
+                  <p class="products__product__product-btn__details--price">50<small>
+                    АЗН
+                </small></p>
+                </div>
+              </button>
+              <button
+                class="products__product__product-btn d-flex"
+                id="salad-btn"
+              >
+                <img
+                  src="./assets/images/vegetarian.jpg"
+                  alt="Sale Yesterday"
+                />
+                <div class="products__product__product-btn__details">
+                  <p class="products__product__product-btn__details--title">
+                    Takushi
+                  </p>
+                  <p
+                    class="products__product__product-btn__details--description my-2"
+                  >
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Officia, alias.
+                  </p>
+                  <p class="products__product__product-btn__details--price">50<small>
+                    АЗН
+                </small></p>
+                </div>
+              </button>
+              <button
+                class="products__product__product-btn d-flex"
+                id="salad-btn"
+              >
+                <img src="./assets/images/sushsi2.jpg" alt="Sale Yesterday" />
+                <div class="products__product__product-btn__details">
+                  <p class="products__product__product-btn__details--title">
+                    Takushi
+                  </p>
+                  <p
+                    class="products__product__product-btn__details--description my-2"
+                  >
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Officia, alias.
+                  </p>
+                  <p class="products__product__product-btn__details--price">50<small>
+                    АЗН
+                </small></p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/mobile.js "></script>
+  </body>
+</html>
