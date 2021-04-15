@@ -86,9 +86,16 @@ a {
 }
 
 .header .mobile-header {
-  position: fixed;
-  top: 1rem;
-  left: 0;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .mobile-header {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+  }
 }
 
 .header .mobile-header__logo {
@@ -156,6 +163,12 @@ a {
   background: -webkit-gradient(linear, left bottom, left top, from(#2325261c), to(#0000005b));
   background: linear-gradient(to top, #2325261c, #0000005b);
   z-index: 999999;
+}
+
+@media only screen and (min-width: 767px) {
+  .main .shadowSlideMobile {
+    display: none;
+  }
 }
 
 .main .mobile-nav {
@@ -313,15 +326,15 @@ a {
   display: block;
   margin: 0 auto;
   border-radius: 100%;
-  -webkit-transition: -webkit-transform 10s;
-  transition: -webkit-transform 10s;
-  transition: transform 10s;
-  transition: transform 10s, -webkit-transform 10s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .categories__slides .swiper-slide .categories-wrapper > img:hover {
-  -webkit-transform: rotate(1440deg);
-          transform: rotate(1440deg);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .categories__slides .swiper-slide .categories-wrapper--title {
@@ -362,7 +375,7 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: .8rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   color: #3c3c3c;
   width: 100%;
   background: #fff;
@@ -607,11 +620,9 @@ a {
   top: 0;
   left: 2rem;
   background-color: #fff;
-  color: #ff0000;
-  border: 1px solid #ff0000;
+  color: #3c3c3c;
+  border: 1px solid #3c3c3c;
   padding: 5px 10px;
-  font-weight: bold;
-  border-radius: 4px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -628,11 +639,9 @@ a {
   position: absolute;
   top: 0;
   right: 2rem;
-  background-color: #ff0000;
+  background-color: #3c3c3c;
   color: #fff;
   padding: 5px 10px;
-  font-weight: bold;
-  border-radius: 4px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -674,6 +683,7 @@ a {
 }
 
 .footer__social {
+  width: 30%;
   height: 100%;
 }
 
@@ -800,6 +810,5 @@ a {
 
 .products__product__product-btn__details--price {
   font-size: 18px;
-  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
